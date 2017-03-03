@@ -14,7 +14,6 @@ def preprocessing(pathFile):
         string_ = [line.translate(None, string.punctuation).replace('\n', ' ').lower() for line in data]
         tokens = ''.join(string_).split()
         string_ = ' '.join(tokens)
-        # print f, string_.strip()
         lines.append(string_.strip())
     return lines, files
 
